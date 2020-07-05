@@ -1,0 +1,20 @@
+.monthly-expense{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    padding: 0 16px;
+    width: 300px;
+    input{
+        border-radius: 2px 0 0 2px;
+        border: 0;
+        outline: 0 none;
+        font-size: 14px;
+        height: 36px;
+        width: 100%;
+    }
+}
+.monthly-expense__info{
+    font-size: 10px;
+    padding-top: 6px;
+    text-align: left;
+}

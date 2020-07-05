@@ -1,0 +1,40 @@
+.app-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4000;
+    left: 0;
+    top: 0;
+    .app-modal__background{
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(63, 81, 102, 0.4);
+    }
+    .app-modal__header{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px;
+        border-bottom: solid 1px #e0e0e0;
+        .app-modal__title{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        img{
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+    
+    .app-modal__content{
+        background-color: #ffff;
+        z-index: 2;
+    }
+}

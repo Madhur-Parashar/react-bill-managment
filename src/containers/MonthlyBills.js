@@ -1,67 +1,36 @@
-import React from 'react';
+import React from "react";
 
-import Bills from "../components/Bills";
-import AddBills from "../components/UpdateBills";
-import EditBils from "../components/EditBils";
+import Bills from "../components/Bills/Bills";
 
-
-
-import {connect} from "react-redux"
+import { connect } from "react-redux";
 
 class MonthlyBills extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {isEditBills:false,editableBills:null};
-    this.handleEditBtnClick = this.handleEditBtnClick.bind(this)
-    this.handleUpdateBill =this.handleUpdateBill.bind(this)
-
-  }
-  handleEditBtnClick(bill){
-    this.setState({
-      isEditBills: true,
-      editableBills: bill
-    })
-  }
-  handleUpdateBill(payload){
-    this.setState({
-      isEditBills: false,
-      editableBills: null
-    })
-    this.props.updateBill(payload)
-  }
-
-    render() {
-      return (
-          <div>       
-            {this.state.isEditBills ?
-             <EditBils editedBills={this.state.editableBills} onUpdateBill={this.handleUpdateBill}/> :
-              <div>
-                Monthly bills
-                  <AddBills handleAddBills={this.props.addBills}/>
-                  <Bills 
-                  bills={this.props.monthlyBills} 
-                  handleDeleteBill={this.props.deleteBill}
-                  onEditBillsClick={this.handleEditBtnClick}
-                  />
-                
-              </div>         
-            }           
-          </div>
-      )
-    }
-  }
-
-const mapStateToProps = state =>{
-  return{
-    monthlyBills: state.monthlyBills.bills
+  render() {
+    return (
+      <div>
+        <h2>Monthly bills</h2>
+        <Bills
+          bills={this.props.monthlyBills}
+          handleDeleteBill={this.props.deleteBill}
+          onEditBills={this.props.updateBill}
+          onAddBills={this.props.addBills}
+        />
+      </div>
+    );
   }
 }
 
-const mapDispatchToProps = dispatch=>{
+const mapStateToProps = (state) => {
   return {
-    addBills: (payload)=>dispatch({type:'ADD_BILLS',payload}),
-    deleteBill : (id) => dispatch({type:'DELETE_BILLS',id}),
-    updateBill : (payload) =>dispatch({type:'UPDATE_BILLS',payload}),
-  }
-}
-export default connect(mapStateToProps,mapDispatchToProps)(MonthlyBills);
+    monthlyBills: state.monthlyBills.bills,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addBills: (payload) => dispatch({ type: "ADD_BILLS", payload }),
+    deleteBill: (id) => dispatch({ type: "DELETE_BILLS", id }),
+    updateBill: (payload) => dispatch({ type: "UPDATE_BILLS", payload }),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(MonthlyBills);
