@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.df147f4a.chunk.css",
-    "main.js": "/static/js/main.be9fc75a.chunk.js",
-    "main.js.map": "/static/js/main.be9fc75a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.89e84bd0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.89e84bd0.js.map",
-    "static/js/2.bcdd39f1.chunk.js": "/static/js/2.bcdd39f1.chunk.js",
-    "static/js/2.bcdd39f1.chunk.js.map": "/static/js/2.bcdd39f1.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.752a11b6fdeaef38e0742f972e626641.js": "/precache-manifest.752a11b6fdeaef38e0742f972e626641.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.df147f4a.chunk.css.map": "/static/css/main.df147f4a.chunk.css.map",
-    "static/js/2.bcdd39f1.chunk.js.LICENSE.txt": "/static/js/2.bcdd39f1.chunk.js.LICENSE.txt",
-    "static/media/search.svg": "/static/media/search.1a2efed2.svg"
+    "main.css": "/react-bill-managment/static/css/main.df147f4a.chunk.css",
+    "main.js": "/react-bill-managment/static/js/main.fc45b793.chunk.js",
+    "main.js.map": "/react-bill-managment/static/js/main.fc45b793.chunk.js.map",
+    "runtime-main.js": "/react-bill-managment/static/js/runtime-main.f566b1e1.js",
+    "runtime-main.js.map": "/react-bill-managment/static/js/runtime-main.f566b1e1.js.map",
+    "static/js/2.bcdd39f1.chunk.js": "/react-bill-managment/static/js/2.bcdd39f1.chunk.js",
+    "static/js/2.bcdd39f1.chunk.js.map": "/react-bill-managment/static/js/2.bcdd39f1.chunk.js.map",
+    "index.html": "/react-bill-managment/index.html",
+    "precache-manifest.3811abd8ddf88622e7199319b0e0d956.js": "/react-bill-managment/precache-manifest.3811abd8ddf88622e7199319b0e0d956.js",
+    "service-worker.js": "/react-bill-managment/service-worker.js",
+    "static/css/main.df147f4a.chunk.css.map": "/react-bill-managment/static/css/main.df147f4a.chunk.css.map",
+    "static/js/2.bcdd39f1.chunk.js.LICENSE.txt": "/react-bill-managment/static/js/2.bcdd39f1.chunk.js.LICENSE.txt",
+    "static/media/search.svg": "/react-bill-managment/static/media/search.1a2efed2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.89e84bd0.js",
+    "static/js/runtime-main.f566b1e1.js",
     "static/js/2.bcdd39f1.chunk.js",
     "static/css/main.df147f4a.chunk.css",
-    "static/js/main.be9fc75a.chunk.js"
+    "static/js/main.fc45b793.chunk.js"
   ]
 }
